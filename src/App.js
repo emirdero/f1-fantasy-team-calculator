@@ -1,5 +1,5 @@
-import Head from "next/head";
 import React from "react";
+import "./App.css";
 
 export default function Home() {
   const [team, setTeam] = React.useState(
@@ -22,11 +22,10 @@ export default function Home() {
 
   return (
     <div className='container'>
-      <Head>
+      <head>
         <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
-        <link rel='stylesheet' href='style.css' />
-      </Head>
+      </head>
       <div id='modal-root'></div>
       <Modal
         id='constructorModal'
