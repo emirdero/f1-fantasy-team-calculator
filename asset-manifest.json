@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/f1-fantasy-team-calculator/static/css/main.ae39f403.css",
+    "main.js": "/f1-fantasy-team-calculator/static/js/main.8adf6eac.js",
+    "static/js/787.2d1d87f2.chunk.js": "/f1-fantasy-team-calculator/static/js/787.2d1d87f2.chunk.js",
+    "index.html": "/f1-fantasy-team-calculator/index.html",
+    "main.ae39f403.css.map": "/f1-fantasy-team-calculator/static/css/main.ae39f403.css.map",
+    "main.8adf6eac.js.map": "/f1-fantasy-team-calculator/static/js/main.8adf6eac.js.map",
+    "787.2d1d87f2.chunk.js.map": "/f1-fantasy-team-calculator/static/js/787.2d1d87f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae39f403.css",
+    "static/js/main.8adf6eac.js"
+  ]
+}
