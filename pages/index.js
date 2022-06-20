@@ -80,6 +80,7 @@ export default function Home() {
         <div className='grid'>
           {team.map((item, index) => (
             <a
+              key={"card" + index}
               onClick={() => {
                 document.getElementById(
                   index == 0 ? "constructorModal" : "driverModal"
@@ -89,7 +90,10 @@ export default function Home() {
               className='card'
               style={{
                 backgroundColor: item.color,
-                color: item.price == 0 ? "black" : "white",
+                color:
+                  item.price == 0 || item.color == "#ffffff"
+                    ? "black"
+                    : "white",
               }}
             >
               {item.price == 0 ? (
@@ -136,19 +140,24 @@ function Modal(props) {
         </a>
         <div>
           <div className='grid' style={{ maxWidth: 500000 }}>
-            {props.items.map((constructor) => {
+            {props.items.map((item, index) => {
               return (
                 <a
+                  key={props.id + index}
                   onClick={() => {
-                    props.setConstructor(constructor);
+                    props.setConstructor(item);
                     closeModal();
                   }}
                   className='card'
+                  style={{
+                    borderColor: item.color,
+                    borderWidth: 5,
+                  }}
                 >
                   <p className='pluss'>
-                    {constructor.name}
-                    <br />${constructor.price} -{" "}
-                    {constructor.average_score_current_season.toFixed(2)} points
+                    {item.name}
+                    <br />${item.price} -{" "}
+                    {item.average_score_current_season.toFixed(2)} points
                   </p>
                 </a>
               );
